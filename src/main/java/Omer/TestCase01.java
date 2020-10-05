@@ -1,4 +1,4 @@
-package Mr.Omer;
+package Omer;
 
 import org.testng.annotations.Test;
 
