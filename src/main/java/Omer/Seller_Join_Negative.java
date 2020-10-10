@@ -1,5 +1,5 @@
 package Omer;
 
-public class TestCase01  {
+public class Seller_Join_Negative {
 
 }

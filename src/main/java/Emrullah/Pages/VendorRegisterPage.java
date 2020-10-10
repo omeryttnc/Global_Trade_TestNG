@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 public class VendorRegisterPage {
     WebDriver driver;
 
-    public VendorRegisterPage(WebDriver driver){
+    public VendorRegisterPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(linkText = "Seller Join Now")
@@ -22,8 +22,8 @@ public class VendorRegisterPage {
     @FindBy(id = "company_mobile")
     public WebElement companyMobile;
 
-    @FindBy(id="company_address")
-        public WebElement companyAddress;
+    @FindBy(id = "company_address")
+    public WebElement companyAddress;
 
     @FindBy(id = "vender_name")
     public WebElement vendorName;
@@ -40,22 +40,22 @@ public class VendorRegisterPage {
     @FindBy(name = "country")
     public WebElement countryDropDown;
 
-    @FindBy(id="select_state")
+    @FindBy(id = "select_state")
     public WebElement state;
 
-    @FindBy(id="select_city")
+    @FindBy(id = "select_city")
     public WebElement city;
 
-    @FindBy(id="vender_address")
+    @FindBy(id = "vender_address")
     public WebElement vendorAdress;
 
-    @FindBy(id="zip_code_input")
+    @FindBy(id = "zip_code_input")
     public WebElement zipCode;
 
-    @FindBy(name ="category")
+    @FindBy(name = "category")
     public WebElement category;
 
-    @FindBy(id ="password")
+    @FindBy(id = "password")
     public WebElement password;
 
     @FindBy(xpath = "(//button[@type='submit'])[2]")
