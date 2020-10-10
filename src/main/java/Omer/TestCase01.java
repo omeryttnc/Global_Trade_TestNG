@@ -10,14 +10,14 @@ public class TestCase01 extends TestBase {
     GlobalMainPage globalMainPage = new GlobalMainPage(driver);
 
     @Test
-    public void testCase()  {
+    public void testCase() throws InterruptedException {
         driver.get("https://www.glbtrader.com/");
         globalMainPage.seller_Join_now.click();
+        Thread.sleep(10000);
         String actualTitle = driver.getTitle();
+        Thread.sleep(10000);
         System.out.println(actualTitle);
-
     }
-
     @Test
     public void test() {
         driver.get("https://www.glbtrader.com/");
