@@ -3,13 +3,12 @@ package utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
 public abstract class TestBase {
-    //TestBase will have only @BeforeMehtod and @AfterMethod
+    //TestBase will have only @BeforeMethod and @AfterMethod
     //This class will not have any Test Class!!!!!
     //Create the driver in the class level
     //WebDriver object must be protected OR public so we can access to this object in different package
@@ -22,9 +21,9 @@ public abstract class TestBase {
         driver.manage().window().maximize();
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
-
+//    @AfterMethod
+//    public void tearDown(){
+//        driver.quit();
+//    }
+//
 }

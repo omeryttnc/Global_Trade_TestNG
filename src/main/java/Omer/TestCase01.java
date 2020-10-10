@@ -8,10 +8,11 @@ import utilities.TestBase;
 public class TestCase01 extends TestBase {
 
     GlobalMainPage globalMainPage = new GlobalMainPage(driver);
-
     @Test
     public void testCase() throws InterruptedException {
         driver.get("https://www.glbtrader.com/");
+
+        GlobalMainPage globalMainPage = new GlobalMainPage(driver);
         globalMainPage.seller_Join_now.click();
         Thread.sleep(10000);
         String actualTitle = driver.getTitle();
