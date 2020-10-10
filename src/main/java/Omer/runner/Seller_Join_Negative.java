@@ -7,10 +7,9 @@ import utilities.Driver;
 public class Seller_Join_Negative {
 
     @Test
-    public void SellerJoinNegative() throws InterruptedException {
-    GlobalMainPage globalMainPage = new GlobalMainPage(Driver.getDriver());
+    public static void Go_to_agent_seller() throws InterruptedException {
+        GlobalMainPage globalMainPage = new GlobalMainPage(Driver.getDriver());
         globalMainPage.setSellerJoinNow();
-
-
     }
+
 }

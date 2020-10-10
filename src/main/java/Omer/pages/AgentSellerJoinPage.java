@@ -30,6 +30,8 @@ public class AgentSellerJoinPage {
     @FindBy(name = "country")
     public WebElement Country;
 
+
+
     @FindBy(id = "select_state")
     public WebElement State;
 
