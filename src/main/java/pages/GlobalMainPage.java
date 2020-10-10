@@ -14,7 +14,7 @@ public class GlobalMainPage {
     }
 
 
-    @FindBy(xpath = "//div/div[@class='pull-right section_top_bar']/a[3]")
+    @FindBy(xpath = "(//a//i[@class='fa fa-user'])[1]")
     public WebElement seller_Join_now;
-
+                    //div/div[@class='pull-right section_top_bar']/a[3]
 }
